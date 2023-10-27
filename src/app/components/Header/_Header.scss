@@ -1,0 +1,14 @@
+.header-container {
+    position: fixed;
+    top: 0;
+    height: 80px; 
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .logo-container {
+        display: flex; height: 100%;
+        img { width: 130px; height: 43px; }
+
+    }
+}

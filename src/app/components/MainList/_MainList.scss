@@ -1,0 +1,65 @@
+.main-list-container {
+    width: 50%;
+    @media screen and (max-width: 1440px) {
+        width: 100%;
+        
+    }
+
+    .list-container {
+
+
+        .episode-list {
+            border-right: 2px solid #144171;
+            border-left: 2px solid #144171;
+            display: flex;
+            flex-direction: column;
+
+            .episode {
+                display: flex;
+                @media screen and (max-width: 1440px) {
+                    flex-direction: column;
+                    align-items: unset;
+                }
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 10px;
+                box-sizing: border-box;
+                text-align: left;
+                border-top: 2px solid #144171;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #144171;
+                    color: white;
+                }
+
+                .number,
+                .date {
+                    width: 25%;
+                    @media screen and (max-width: 1440px)
+                     {
+                        width: 100%;
+                    }
+                }
+
+                .number {
+                    font-weight: 400;
+                }
+
+                .date {
+                    font-weight: 600;
+                }
+
+                .title {
+                    width: 50%;
+                    font-weight: 700;
+                }
+
+                &:last-child {
+                    border-bottom: 2px solid #144171;
+                }
+            }
+        }
+    }
+}
