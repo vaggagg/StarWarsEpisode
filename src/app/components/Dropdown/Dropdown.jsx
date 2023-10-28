@@ -1,7 +1,6 @@
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import { useContext, useEffect, useState } from 'react';
-import './_dropdown.scss';
 import { MoviesProvider } from '../../context/Provider';
 
 export default function DropdownComponent() {
