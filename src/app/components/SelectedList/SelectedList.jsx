@@ -69,7 +69,7 @@ export default function SelectedList() {
 
                 movie.averageSum = averageSum;
 
-                movie.totalSum = totalSum;
+                movie.totalSum = totalSum; 
 
                 movie.imdbRating = imdbRating;
 
@@ -78,7 +78,7 @@ export default function SelectedList() {
                 movie.metacriticRating = metacriticRating;
 
                 movie.poster = starData.Poster;
-                
+
                 setData(movie);
 
             } catch (err) {
