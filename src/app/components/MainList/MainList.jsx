@@ -116,9 +116,9 @@ export default function MainList() {
           <ul className="episode-list">
 
             {
-              filteredList.map((item) => {
+              filteredList.map((item, index) => {
                 return (
-                  <li className="episode" onClick={() => setSelectedList(item.url)}>
+                  <li className="episode" key={index} onClick={() => setSelectedList(item.url)}>
 
                     <div className="number">EPISODE {item.episode_id}</div>
 
